@@ -1,4 +1,4 @@
-<!-- Copyright 2024 Kieran W Harvie. All rights reserved. -->
+<!-- Copyright 2024-2025 Kieran W Harvie. All rights reserved. -->
 
 **:warning:Living Document: All Parts are Subject to Change:warning:**
 
@@ -41,11 +41,12 @@ Hence the following table only gives a mathematical summary of each demonstratio
 | cubic triangle | Implementation of a [biquadratic Bézier surface](https://en.wikipedia.org/wiki/B%C3%A9zier_surface) which can be thought of as a soft triangle controlled by 10 points which can be used to 'pull' the triangle towards them. |
 | conic section | Implementation of a [rational quadratic Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Rational_B%C3%A9zier_curves) which can be thought of as as the [conic section](https://en.wikipedia.org/wiki/Conic_section) between two endpoints, their tangents, and an arbitrary third point. |
 | width and color | Implementation of a [cubic Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) where both width and color are also parameterized by the control points alongside position. |
+| composite curve | Implementation of a [composite Bézier curve](https://en.wikipedia.org/wiki/Composite_B%C3%A9zier_curve) with velocity continuity such that the geometry is specified once and locally at each point defining the curve. |
 
 And more to come!
 
 ## Additional resources
 - Set-up: For general SDL examples and set-up advice consider Lazy Foo' Productions [SDL Tutorials](https://lazyfoo.net/tutorials/SDL/index.php).
-- Tessellation Shader: For background on the Tessellation Shader consult the OpenGL wiki's [Tessellation page](https://lazyfoo.net/tutorials/SDL/index.php).
+- Tessellation Shader: For background on the Tessellation Shader consult the OpenGL wiki's [Tessellation page](https://www.khronos.org/opengl/wiki/Tessellation).
 - Mathematics: For further reading into how the presented algorithms work consider reading "[Curves and Surfaces for CAGD: A Practical Guide](https://books.google.com.au/books/about/Curves_and_Surfaces_for_CAGD.html?id=5HYTP1dIAp4C&source=kp_book_description&redir_esc=y)".
 
