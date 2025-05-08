@@ -4,6 +4,9 @@
 
 # Tessellating Bézier Curves and Surface
 
+<table>
+<tr>
+<th>
 <p align="center">
 	<img src="bicubic.png" alt="A picture of a Bicubic Bézier surface" width = 500px style="background:white;border-style: groove;border-radius:5px;padding:5px">
 	<br>
@@ -11,7 +14,8 @@
 		Only the 16 white points where sent to the graphics card.
 	<br>
 </p>
-
+</th>
+<th>
 <p align="center">
 	<img src="conic.png" alt="A picture of a Conic section" width = 500px style="background:white;border-style: groove;border-radius:5px;padding:5px">
 	<br>
@@ -19,7 +23,31 @@
 		Only 3 points where sent to the graphics card.
 	<br>
 </p>
-
+</p>
+</th>
+</tr>
+<tr>
+<th>
+<p align="center">
+	<img src="composite.png" alt="A picture composite cubic Bézier curve" width = 500px style="background:white;border-style: groove;border-radius:5px;padding:5px">
+	<br>
+	    A composite cubic Bézier with velocity continuity.
+		The geometry is specified once and locally at each point defining the curve.
+	<br>
+</p>
+</th>
+<th>
+<p align="center">
+	<img src="intersections.png" alt="A picture of the intersections of a cubic Bézier curve with the x-axis." width = 500px style="background:white;border-style: groove;border-radius:5px;padding:5px">
+	<br>
+		The intersections of a cubic Bézier curve with the x-axis.
+		The intersections are calculated CPU side and the curve is rendered using the normal method.
+	<br>
+</p>
+</p>
+</th>
+</tr>
+</table>
 This repo demonstrates how to use OpenGL's tessellation shaders to render Bézier curves and surfaces.
 These curves and surfaces are an intuitive, extendable, and numerically stable way to add character to renders.
 The tessellation shaders provide a performance minded and memory efficient way to implement Bézier curves and surfaces in OpenGL,
@@ -42,6 +70,7 @@ Hence the following table only gives a mathematical summary of each demonstratio
 | conic section | Implementation of a [rational quadratic Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Rational_B%C3%A9zier_curves) which can be thought of as as the [conic section](https://en.wikipedia.org/wiki/Conic_section) between two endpoints, their tangents, and an arbitrary third point. |
 | width and color | Implementation of a [cubic Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) where both width and color are also parameterized by the control points alongside position. |
 | composite curve | Implementation of a [composite Bézier curve](https://en.wikipedia.org/wiki/Composite_B%C3%A9zier_curve) with velocity continuity such that the geometry is specified once and locally at each point defining the curve. |
+| intersections | Implementation of the intersections of a [cubic Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) and a line using iterative subdivision. Note that the intersection isn't directly related to OpenGl and reuses the shaders from the cubic curve demonstration. |
 
 And more to come!
 
