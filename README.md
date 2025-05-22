@@ -4,6 +4,10 @@
 
 # Tessellating Bézier Curves and Surface
 
+This repo demonstrates how to use OpenGL's tessellation shaders to render Bézier curves and surfaces.
+Such curves and surfaces are an intuitive, extendable, and numerically stable way to add character to renders.
+And the tessellation shaders provide a performance minded and memory efficient way to implement Bézier curves and surfaces in OpenGL,
+what a great combination!
 <table>
 <tr>
 <th>
@@ -48,11 +52,6 @@
 </th>
 </tr>
 </table>
-This repo demonstrates how to use OpenGL's tessellation shaders to render Bézier curves and surfaces.
-These curves and surfaces are an intuitive, extendable, and numerically stable way to add character to renders.
-The tessellation shaders provide a performance minded and memory efficient way to implement Bézier curves and surfaces in OpenGL,
-what a great combination!
-
 
 ## Summaries
 
